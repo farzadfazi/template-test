@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +10,58 @@
     <link rel="stylesheet" href="Style.css">
 
 </head>
+
 <body>
     <div class="title-container" id="title-container">
-       <div class="app-title"> 
-        <span class="title-text" id="title-text">QUOTE GENERATOR</span>
+        <div class="app-title">
+            <span class="title-text" id="title-text"> QUOTE & JOKE GENERATOR</span>
+            <!-- loader icon -->
 
-       </div>
-    
+            <div class="loader" id="loader"></div>
+        </div>
 
-<div class="quote-container" id="quote-container">
-<!-- Quote  -->
-<div class="quote-text">
-    <i class="fas fa-quote-left"></i>
-    <span id="quote">What you are is what you have been . what you'll be is what you do now</span>
-</div>
-<!-- author -->
-<div class="quote-author">
-    <span id="author">Buddha</span>
-</div>
-<!-- buttons -->
-<div class="button-container">
-    <button class="twitter-button" id="twitter" title="Tweet this!">
-        <i class="fab fa-twitter"></i>
-    </button>
-    <button id="new-quote">New Quote</button>
-</div>
-</div>
-</div>
+        <div class="joke-container" id="joke-container">
+            <!-- joke setup-->
+            <div class="joke-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="joke-setup"></span>
+            </div>
+            <!-- Joke delivery -->
+            <div class="joke-delivery">
+                <span id="joke-delivery"></span>
+            </div>
+        </div>
+
+        <div class="quote-container" id="quote-container">
+            <!-- Quote  -->
+
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+            </div>
+            <!-- author -->
+            <div class="quote-author">
+                <span id="author"></span>
+            </div>
+        </div>
+            <!-- buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title="Tweet this!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-joke">New Joke</button>
+                <button id="new-quote">New Quote</button>
+               
+            </div>
+       
+
+    </div>
+
+
     <!-- script -->
+    <script src="quotes.js"></script>
     <script src="Script.js"></script>
+    <!-- <script src="Scripts2.js"></script> -->
 </body>
+
 </html>

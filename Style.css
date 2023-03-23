@@ -34,21 +34,21 @@ justify-content: center;
     font-size: 3.5rem;
   
 }
-.quote-container{
-   margin-top: 15px;
-    width:auto;
-    max-width:900px;
-    padding:20px 30px;
-    border-radius:10px;
-    background-color: rgba(255, 255,255, 0.9
-    
-    );
-    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2)
-        
-}
-.quote-text {
-    font-size: 2.5rem;
-}
+
+.joke-container{
+    margin-top: 15px;
+     width:auto;
+     max-width:900px;
+     padding:20px 30px;
+     border-radius:10px;
+     background-color: yellowgreen;
+     /* background-color: rgba(255, 255,255, 0.9); */
+     box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2)
+         
+ }
+ .joke-text {
+     font-size: 2.5rem;
+ }
 /* this will be called in js when the quotes are long to reduce the size of font */
 .long-quote {
     font-size: 2rem;
@@ -57,6 +57,20 @@ justify-content: center;
     font-size: 4rem;
 }
 
+.quote-container{
+    margin-top: 15px;
+     width:auto;
+     max-width:900px;
+     padding:20px 30px;
+     border-radius:10px;
+     background-color: yellow;
+     /* background-color: rgba(255, 255,255, 0.9); */
+     box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2)
+}
+
+.quote-text {
+    font-size: 2.5rem;
+}
 .quote-author{
     margin-top: 15px;
     font-size: 1.5rem;
@@ -102,6 +116,26 @@ button:active{
 .fa-twitter{
     font-size: 1.5rem;
 }
+
+/*  Loader icon between loading quotes in case there is a delay */
+.loader {
+    margin:auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+    
+    
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 
 /* Media Query: tabler or smaller */
 @media screen and (max-width: 1000px){
